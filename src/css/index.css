@@ -391,14 +391,13 @@ html{
       text-align: left;
     }
 
-    .fundo{
+.fundo{
         background-image: url('../img/circuitbreaker.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top: 70%;
+        padding-top: 90%;
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
     }
 
     .voltar-ao-topo button{
