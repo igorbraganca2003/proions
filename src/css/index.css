@@ -1,0 +1,650 @@
+@font-face{
+    src: url(../fontes/Roboto-Black.ttf);
+    font-family: 'Roboto-Black';
+}
+@font-face{
+    src: url(../fontes/Roboto-BlackItalic.ttf);
+    font-family: 'Roboto-BlackItalic';
+}
+@font-face{
+    src: url(../fontes/Roboto-Regular.ttf);
+    font-family: 'Roboto-Regular';
+}
+@font-face{
+    src: url(../fontes/Roboto-Italic.ttf);
+    font-family: 'Roboto-Italic';
+}
+@font-face{
+    src: url(../fontes/Roboto-Light.ttf);
+    font-family: 'Roboto-Light';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+    /* ------------- Desktop ------------ */
+    
+    @media screen and (min-width:1025px) {
+        .fundo{
+            background-image: url('../img/circuitbreaker.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 45%;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .voltar-ao-topo button{
+            background-color: white;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .voltar-ao-topo{
+            position: fixed;
+            bottom: 15px;
+            left: 15px; 
+        }
+
+        .voltar-ao-topo i{
+            color: #003d51;
+            font-size: 50px;
+        }
+        
+        .whatsapp{
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background-color: rgb(43, 236, 43);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .whatsapp i{
+            color: white;
+            font-size: 50px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color:#003d51;
+            font-family: 'Roboto-Light';
+            padding-right: 10%;
+        }
+
+        .topnav :hover{
+            color: lightgray;
+        }
+          
+        .topnav a {
+            float: right;
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 30px 30px 10px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+          
+        .topnav a.active {
+            background-color: transparent;
+            float: left;
+            padding: 1% 1% 0 6%;
+            font-size: 50px;
+        }
+    
+        .topnav .icon {
+            display: none;
+        }
+
+        section{
+            background-color: white;
+            font-family: 'Roboto-Black';
+            font-size:2rem;
+            color:#003d51;
+        }
+
+        article{
+            padding-top: 100px;
+        }
+
+        section p{
+            font-family: 'Roboto-Regular';
+            font-size: 1.2rem;
+            padding-top: 10px;
+            color: black;
+        }
+
+        section article img {
+            height: 300px;
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 5px;
+        }
+
+        section article{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 86px;
+            padding-bottom: 3%;
+        }
+
+        section article i{
+            font-size: 3rem;
+            color:#003d51;
+            margin-right: 25px;
+        }
+
+        section article .heading-goes{
+            display: flex;
+            width: 40%;
+            margin-right: 40px ;
+        }
+
+        #inverso{
+            background-color:#003d51;
+            flex-direction:row-reverse ;
+            padding-top: 86px;
+            color: white;
+        }
+        #inverso .heading-goes{
+            margin-left: 60px;
+            margin-right: 0;
+        }
+        #inverso i {
+            font-size: 1.8;
+            margin-right: 25px;
+            color: white;
+        }
+
+        #inverso p{
+            color: white;
+        }
+
+        #inverso img{
+            box-shadow:none;
+        }
+
+        .botão{
+            padding-top: 30px;
+        }
+
+        .saiba-mais{
+            height: 40px;
+            width: 150px;
+            color: white;
+            background-color:#003d51;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Roboto-Regular';
+        }
+
+        #inverso .saiba-mais{
+            height: 40px;
+            width: 150px;
+            color:#003d51;
+            background-color:white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Roboto-Regular';
+        }
+
+        .saiba-mais i{
+            color: white;
+        }
+
+        .saiba-mais span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .saiba-mais span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .saiba-mais:hover span {
+            padding-right: 25px;
+          }
+          
+        .saiba-mais:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        #conjunto-explicacao{
+            padding-top: 50px;
+            display: flex;
+            padding-bottom: 0px;
+        }
+
+        #explicacao{
+            width: 30%;
+            float: left;
+            background-color:#003d51 ;
+            border-radius: 30px;
+            margin-left: 50px;
+            box-shadow: 15px 15px 15px grey;
+            padding-top: 0;
+        }
+
+        #explicacao p{
+            margin:10px 40px 30px 40px;
+            font-size: 1.4rem;
+            color: white;
+            text-align: center;
+        }
+
+        #h1-mobile{
+            display: none;
+        }
+
+        #explicacao i{
+            color: white;
+            padding-left: 47%;
+            font-size: 4rem;
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+
+        #img-explicacao{
+            width: 70%;
+            margin-top: 120px;
+            background-image: url('../img/14113612533014.jpg');
+            background-repeat: no-repeat;
+        }
+
+        #img-explicacao h1{
+            color: white;
+            text-align: center;
+            padding: 100px 40px 0px 40px;
+        }
+
+        #img-explicacao .saiba-mais{
+            height: 40px;
+            width: 150px;
+            color:#003d51;
+            background-color:white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Roboto-Regular';
+        }
+
+        .contatos h1{
+            float: right;
+            font-family: 'Roboto-BlackItalic';
+            padding-right: 20%;
+            font-size:5rem ;
+            color:#003d51;
+            padding-top: 15px;
+        }
+
+        .contatos-info{
+            padding: 15% 10% 10% 10% ;
+            font-family:'Roboto-Light' ;
+            font-size: 2.8rem;
+        }
+
+        .contatos-info i{
+            color:#003d51;
+            padding-right: 20px;
+        }
+
+        .contatos-info p{
+            padding: 10px 0 10px 0;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
+        footer p {
+           text-align: center;
+           font-family: 'Roboto-Light';
+        }
+
+        /* Serviços */
+
+        .inicio{
+            display: flex;
+            padding-bottom: 50px;
+            background-color: lightgray;
+
+        }
+
+        .h2-serviços{
+            font-family: 'Roboto-Black';
+            padding: 10%;
+            font-size: 7rem;
+            color:black;
+        }
+    }
+
+
+
+
+
+    
+/* ---------- Mobile ---------- */
+
+@media screen and (max-width:1024px) {
+    .topnav {
+        overflow: hidden;
+        background-color:#003d51 ;
+        font-family: 'Roboto-Light';
+    }
+
+    .topnav a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 30px 30px 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      
+      .topnav a.active {
+        background-color: transparent;
+        float: left;
+        padding: 3% 3% 0 3%;
+        font-size: 50px;
+      }
+
+    .topnav a:not(:first-child) {display: none;}
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+      font-size: 33px;
+    }
+  
+    .topnav.responsive {position: relative;}
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .fundo{
+        background-image: url('../img/circuitbreaker.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 70%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .voltar-ao-topo button{
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: none;
+    }
+
+    .voltar-ao-topo{
+        position: fixed;
+        bottom: 15px;
+        left: 15px; 
+    }
+
+    .voltar-ao-topo i{
+        color: #003d51;
+        font-size: 50px;
+    }
+    
+    .whatsapp{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: rgb(43, 236, 43);
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .whatsapp i{
+        color: white;
+        font-size: 50px;
+    }
+
+    article{
+        padding-top: 100px;
+    }
+
+    section{
+        background-color: white;
+        font-family: 'Roboto-Black';
+        font-size:2rem;
+        color:#003d51;
+    }
+
+    section p{
+        font-family: 'Roboto-Regular';
+        font-size: 1.4rem;
+        padding-top: 10px;
+        color: black;
+    }
+
+    section article img {
+        height: 300px;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 5px;
+        display: none;
+    }
+
+    section article{
+        flex-direction: row;
+        justify-content: center;
+        padding-top:20px;
+        padding-bottom: 3%;
+    }
+
+    section article i{
+        font-size: 3rem;
+        color:#003d51;
+        margin-right: 25px;
+    }
+
+    section article .heading-goes{
+        width: 80%;
+        margin: 25px 40px;
+    }
+
+    #inverso{
+        background-color:#003d51;
+        flex-direction:row-reverse ;
+        padding-top: 20px;
+        color: white;
+    }
+    #inverso .heading-goes{
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    #inverso i {
+        font-size: 1.8;
+        margin-right: 25px;
+        color: white;
+    }
+
+    #inverso p{
+        color: white;
+    }
+
+    #inverso img{
+        box-shadow:none;
+    }
+
+    .botão{
+        padding-top: 30px;
+    }
+
+    .saiba-mais{
+        height: 40px;
+        width: 150px;
+        color: white;
+        background-color:#003d51;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        font-family: 'Roboto-Regular';
+        outline: none;
+        cursor: pointer;
+    }
+
+    #inverso .saiba-mais{
+        height: 40px;
+        width: 150px;
+        color:#003d51;
+        background-color:white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        font-family: 'Roboto-Regular';
+        outline: none;
+        cursor: pointer;
+    }
+
+    #conjunto-explicacao{
+        padding-top: 50px;
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    #explicacao{
+        width: 90%;
+        float: left;
+        background-color:#003d51 ;
+        border-radius: 30px;
+        margin-left: 20px;
+        box-shadow: 15px 15px 15px grey;
+        padding-top: 0;
+    }
+
+    #h1-mobile{
+        color: white;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 30px 10px 20px 10px;
+    }
+
+    #explicacao p{
+        margin:10px 20px 30px 20px;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+
+    #explicacao i{
+        color: white;
+        padding-left: 47%;
+        font-size: 4.8rem;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    #img-explicacao{
+        width: 70%;
+        margin-top: 120px;
+        background-image: url('../img/14113612533014.jpg');
+        background-repeat: no-repeat;
+        display: none;
+    }
+
+    #img-explicacao h1{
+        color: white;
+        text-align: center;
+        padding: 100px 40px 0px 40px;
+        display: none;
+    }
+
+    #img-explicacao .saiba-mais{
+        height: 40px;
+        width: 150px;
+        color:#003d51;
+        background-color:white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: 'Roboto-Regular';
+        display: none;
+    }
+
+    .contatos h1{
+        font-family: 'Roboto-BlackItalic';
+        font-size:3rem ;
+        color:#003d51;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .contatos-info{
+        padding: 10% 10%;
+        font-family:'Roboto-Light' ;
+        font-size: 100%;
+    }
+
+    .contatos-info i{
+        color:#003d51;
+        padding-right: 20px;
+    }
+
+    .contatos-info p{
+        padding: 20px 0 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+        background-color: lightgray;
+    }
+    
+    footer p {
+       text-align: center;
+       font-family: 'Roboto-Light';
+    }
+
+    /* Serviços */
+
+    .inicio{
+        display: flex;
+        padding-bottom: 50px;
+        background-color: lightgray;
+
+    }
+
+    .h2-serviços{
+        font-family: 'Roboto-Black';
+        padding: 10%;
+        font-size: 450%;
+        color:black;
+    }
+
+    
+}
