@@ -362,7 +362,7 @@ html{
         display: block;
         color: #f2f2f2;
         text-align: center;
-        padding: 30px 30px 10px 20px;
+        padding: 15px 20px 15px 10px;
         text-decoration: none;
         font-size: 20px;
       }
@@ -370,8 +370,12 @@ html{
       .topnav a.active {
         background-color: transparent;
         float: left;
-        padding: 3% 3% 0 3%;
-        font-size: 50px;
+        padding: 3% 3% 0% 3%;
+      }
+
+      .topnav .active img{
+          width:200px;
+          height: 50px;
       }
 
     .topnav a:not(:first-child) {display: none;}
