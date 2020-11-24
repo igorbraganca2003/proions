@@ -41,6 +41,10 @@ html{
             background-size: cover;
         }
 
+        .fundo-mobile img {
+            display: none;
+        }
+
         .voltar-ao-topo button{
             background-color: white;
             border-radius: 30px;
@@ -391,13 +395,19 @@ html{
       text-align: left;
     }
 
-.fundo{
+    .fundo{
         background-image: url('../img/circuitbreaker.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 90%;
         background-attachment: fixed;
         background-position: center;
+        display: none;
+    }
+
+    .fundo-mobile img {
+        height: 60%;
+        width: 100%;
     }
 
     .voltar-ao-topo button{
@@ -453,10 +463,10 @@ html{
     }
 
     section article img {
-        height: 300px;
+        width: 70%;
+        margin: 5% 0 7% 10%;
         box-shadow: 10px 10px 10px grey;
-        border-radius: 5px;
-        display: none;
+        border-radius: 10px;
     }
 
     section article{
@@ -543,7 +553,7 @@ html{
         background-color:#003d51 ;
         border-radius: 30px;
         margin-left: 20px;
-        box-shadow: 15px 15px 15px grey;
+        box-shadow: 10px 10px 10px grey;
         padding-top: 0;
     }
 
