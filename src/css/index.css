@@ -32,77 +32,76 @@ html{
     
     @media screen and (min-width:1025px) {
         .fundo{
-            background-image: url('../img/circuitbreaker.jpg');
+            background-image: url('../img/back1.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            padding-top: 45%;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
+            padding-top: 50%;
         }
 
         .fundo-mobile img {
             display: none;
         }
 
-        .voltar-ao-topo button{
-            background-color: white;
-            border-radius: 30px;
-            border: none;
-            outline: none;
-            cursor: pointer;
+        .fundo-txt{
+            position: absolute;
+            top: 45%;
+            left: 5%;
         }
 
-        .voltar-ao-topo{
-            position: fixed;
-            bottom: 15px;
-            left: 15px; 
-        }
-
-        .voltar-ao-topo i{
-            color: #003d51;
-            font-size: 50px;
-        }
-        
-        .whatsapp{
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            background-color: rgb(43, 236, 43);
-            border-radius: 10px;
-            padding: 5px;
-        }
-
-        .whatsapp i{
+        .fundo h2{
+            font-family: 'Roboto-Regular';
+            padding-bottom: 1%;
             color: white;
-            font-size: 50px;
+            font-size: 1.5rem;
         }
 
-        .topnav {
-            overflow: hidden;
-            background-color:#003d51;
+        .fundo h1{
+            font-family: 'Roboto-Black';
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        .fundo p{
             font-family: 'Roboto-Light';
-            padding-right: 10%;
+            color: white;
+            font-size: 0.9rem;
+            padding-top: 3%;
+        }
+
+        .fundo-txt-outros{
+            position: absolute;
+            top: 45%;
+            left: 5%;
+        }
+
+        .fundo-txt-outros h1{
+            font-size: 6rem;
+        }
+
+        /* Barra-de-navegação */
+        .topnav {
+            font-family: 'Roboto-Regular';
+            padding-right: 5%;
         }
 
         .topnav :hover{
-            color: lightgray;
+            color:#017ca5;
         }
           
         .topnav a {
             float: right;
             display: block;
-            color:white;
+            color:#003d51;
             text-align: center;
-            padding: 30px 30px 10px 20px;
+            padding: 50px 30px 10px 20px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 23px;
         }
           
         .topnav a.active {
             background-color: transparent;
             float: left;
-            padding: 1% 1% 0 6%;
+            padding: 2% 1% 0 3%;
             font-size: 50px;
         }
     
@@ -110,6 +109,7 @@ html{
             display: none;
         }
 
+        /* Seções */
         section{
             background-color: white;
             font-family: 'Roboto-Black';
@@ -138,8 +138,8 @@ html{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding-top: 86px;
-            padding-bottom: 3%;
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
 
         section article i{
@@ -233,10 +233,11 @@ html{
             right: 0;
         }
 
+        /* Conjunto-explicação */
         #conjunto-explicacao{
             padding-top: 50px;
             display: flex;
-            padding-bottom: 0px;
+            padding-bottom: 100px;
         }
 
         #explicacao{
@@ -292,42 +293,130 @@ html{
             font-family: 'Roboto-Regular';
         }
 
-        .contatos h1{
-            float: right;
-            font-family: 'Roboto-BlackItalic';
-            padding-right: 20%;
-            font-size:5rem ;
-            color:#003d51;
-            padding-top: 15px;
-        }
-
-        .contatos-info{
-            padding: 15% 10% 10% 10% ;
-            font-family:'Roboto-Light' ;
-            font-size: 2.8rem;
-        }
-
-        .contatos-info i{
-            color:#003d51;
-            padding-right: 20px;
-        }
-
-        .contatos-info p{
-            padding: 10px 0 10px 0;
-        }
-
-        footer {
-            padding: 10px;
+        /* Rodape */
+        .rodape{
             background-color: lightgray;
+            text-align: center;
+            border-bottom: 10px solid  #003d51;
+            padding-top: 60px;
+        }
+
+        .rodape h1{
+            font-family: 'Roboto-Light';
+            font-weight: lighter;
+            font-size:2rem;
+            color:black;
+        }
+
+        .rodape h2{
+            font-family: 'Roboto-Light';
+            font-weight: lighter;
+            font-size:1.5rem;
+            padding:2.5% 0;
+            color: black;
+        }
+
+        .rodape p{
+            font-family: 'Roboto-Light';
+            font-size:1.2rem;
+        }
+
+        .rodape i{
+            padding: 4% 2% 4% 2%;
+            color: #003d51;
+        }
+
+        /* Produtos */
+        .produtos-titulo{
+            text-align: center;
+            color:#003d51;
+            font-size: 1.5rem;
+            font-family: 'Roboto-Black';
+            padding-bottom: 50px;
+        }
+
+        .produtos{
+            width: 90%; 
+            margin: 5% 10% 5% 10%; 
+        }
+
+        .produtos h1{
+            text-align:center;
+            padding-bottom: 0;
+        }
+
+        .produtos-card{
+            width: 300px; 
+            height: 400px; 
+            border-radius: 15px;
+            background-color: rgb(233, 231, 231);
+            display: inline-block;
+        }
+
+        .produtos-card img{
+            width: 100%; 
+            height: 40%; 
+            border-radius: 15px 15px 0 0;
+        }
+
+        .produtos-card h1{
+            font-size: 1.3rem; 
+            color: Black; 
+            font-family:'Roboto-Regular'; 
+            padding: 15px 0 0 20px;
+            text-align: left;
+        }
+
+        .produtos-card p{
+            font-size: 1rem;
+            font-family: 'Roboto-Light';
+            padding: 15px 40px 0 20px;
+        }
+
+        .produtos-card .botão{
+            padding: 20px 0 0 20px;
+        }
+
+        .Veja-mais{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        /* Botões */
+        .voltar-ao-topo button{
+            background-color: white;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .voltar-ao-topo{
+            position: fixed;
+            bottom: 15px;
+            left: 15px; 
+        }
+
+        .voltar-ao-topo i{
+            color: #003d51;
+            font-size: 50px;
         }
         
-        footer p {
-           text-align: center;
-           font-family: 'Roboto-Light';
+        .whatsapp{
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background-color: rgb(43, 236, 43);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .whatsapp i{
+            color: white;
+            font-size: 50px;
         }
 
         /* Serviços */
-
         .inicio{
             display: flex;
             padding-bottom: 50px;
@@ -353,7 +442,7 @@ html{
 @media screen and (max-width:1024px) {
     .topnav {
         overflow: hidden;
-        background-color:#003d51 ;
+        background-color: #003d51;
         font-family: 'Roboto-Light';
     }
 
@@ -367,16 +456,16 @@ html{
         font-size: 20px;
       }
       
-      .topnav a.active {
-        background-color: transparent;
+    .topnav a.active {
+        background-color:  #003d51;
         float: left;
         padding: 3% 3% 0% 3%;
-      }
+    }
 
-      .topnav .active img{
-          width:200px;
-          height: 50px;
-      }
+    .topnav .active img{
+        width:50px;
+        height: 50px;
+    }
 
     .topnav a:not(:first-child) {display: none;}
 
@@ -399,55 +488,54 @@ html{
       text-align: left;
     }
 
+    /* Fundo */
     .fundo{
-        background-image: url('../img/circuitbreaker.jpg');
+        background-color: white;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top: 90%;
-        background-attachment: fixed;
-        background-position: center;
-        display: none;
+        padding-top: 0;
     }
 
-    .fundo-mobile img {
-        height: 60%;
-        width: 100%;
-    }
-
-    .voltar-ao-topo button{
-        background-color: white;
-        border-radius: 30px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        display: none;
-    }
-
-    .voltar-ao-topo{
-        position: fixed;
-        bottom: 15px;
-        left: 15px; 
-    }
-
-    .voltar-ao-topo i{
-        color: #003d51;
-        font-size: 50px;
-    }
-    
-    .whatsapp{
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        background-color: rgb(43, 236, 43);
+    .box{
+        border: 3px solid #003d51;
         border-radius: 10px;
-        padding: 5px;
+        width: 40%;
+        margin: auto;
     }
 
-    .whatsapp i{
-        color: white;
-        font-size: 50px;
+    .fundo-txt{
+        padding: 0 10% 10% 10%;
+        text-align: center;
     }
 
+    .fundo h1{
+        font-size: 2rem;
+        color:#003d51;
+        font-family: 'Roboto-Black';
+    }
+
+    .fundo h2{
+        font-size: 1rem;
+        color:black;
+        font-family: 'Roboto-Regular';
+        padding: 10% 0 4% 0;
+    }
+
+    .fundo p{
+        font-family: 'Roboto-Light';
+        color: black;
+        font-size: 0.9rem;
+        padding-top: 5%;
+    }
+
+    .fundo-txt-outros{
+        font-size: 6rem;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+
+    /* Artigos */
     article{
         padding-top: 100px;
     }
@@ -455,7 +543,7 @@ html{
     section{
         background-color: white;
         font-family: 'Roboto-Black';
-        font-size:2rem;
+        font-size:1.8rem;
         color:#003d51;
     }
 
@@ -481,7 +569,7 @@ html{
     }
 
     section article i{
-        font-size: 3rem;
+        font-size: 2.5rem;
         color:#003d51;
         margin-right: 25px;
     }
@@ -545,10 +633,11 @@ html{
         cursor: pointer;
     }
 
+    /* Conjunto-explicação */
     #conjunto-explicacao{
         padding-top: 50px;
         display: flex;
-        padding-bottom: 0px;
+        padding-bottom: 80px;
     }
 
     #explicacao{
@@ -610,54 +699,131 @@ html{
         display: none;
     }
 
-    .contatos h1{
-        font-family: 'Roboto-BlackItalic';
-        font-size:3rem ;
-        color:#003d51;
-        padding-top: 60px;
+    /* Produtos */
+    .produtos-titulo{
         text-align: center;
-    }
-
-    .contatos-info{
-        padding: 10% 10%;
-        font-family:'Roboto-Light' ;
-        font-size: 100%;
-    }
-
-    .contatos-info i{
         color:#003d51;
-        padding-right: 20px;
-    }
-
-    .contatos-info p{
-        padding: 20px 0 10px 0;
-    }
-
-    footer {
-        padding: 10px;
-        background-color: lightgray;
-    }
-    
-    footer p {
-       text-align: center;
-       font-family: 'Roboto-Light';
-    }
-
-    /* Serviços */
-
-    .inicio{
-        display: flex;
-        padding-bottom: 50px;
-        background-color: lightgray;
-
-    }
-
-    .h2-serviços{
+        font-size: 1.5rem;
         font-family: 'Roboto-Black';
-        padding: 10%;
-        font-size: 450%;
+        padding-bottom: 50px;
+    }
+
+    .produtos{
+        width: 90%; 
+        margin: 0 10% 15% 10%; 
+    }
+
+    .produtos h1{
+        text-align:center;
+        padding-bottom: 50px;
+    }
+
+    .produtos-card{
+        width: 300px; 
+        height: 400px; 
+        background-color: rgb(233, 231, 231);
+        display: inline-block;
+        border: 5px solid white;
+        border-radius: 15px;
+    }
+
+    .produtos-card img{
+        width: 100%; 
+        height: 40%; 
+        border-radius: 15px 15px 0 0;
+    }
+
+    .produtos-card h1{
+        font-size: 1.3rem; 
+        color: Black; 
+        font-family:'Roboto-Regular'; 
+        padding: 15px 0 0 20px;
+        text-align: left;
+    }
+
+    .produtos-card p{
+        font-size: 1rem;
+        font-family: 'Roboto-Light';
+        padding: 15px 40px 0 20px;
+    }
+
+    .produtos-card .botão{
+        padding: 20px 0 0 20px;
+    }
+
+    .Veja-mais{
+        text-align: center;
+        padding: 50px 0 50px 0;
+    }
+
+    /* rodape */
+    .rodape{
+        background-color: lightgray;
+        text-align: center;
+        border-bottom: 10px solid  #003d51;
+        padding-top: 60px;
+    }
+
+    .rodape h1{
+        font-family: 'Roboto-Light';
+        font-weight: lighter;
+        font-size:1.8rem;
         color:black;
     }
 
+    .rodape h2{
+        font-family: 'Roboto-Light';
+        font-weight: lighter;
+        font-size:1.3rem;
+        padding: 10% 8%;
+        color: black;
+    }
+
+    .rodape p{
+        font-family: 'Roboto-Light';
+        font-size:1rem;
+        padding: 2% 8%;
+    }
+
+    .rodape i{
+        padding: 8% 4% 8% 4%;
+        color: #003d51;
+        font-size: 1.5rem;
+    }
+
+    /* botões */
+    .voltar-ao-topo button{
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: none;
+    }
+
+    .voltar-ao-topo{
+        position: fixed;
+        bottom: 15px;
+        left: 15px; 
+    }
+
+    .voltar-ao-topo i{
+        color: #003d51;
+        font-size: 50px;
+    }
+    
+    .whatsapp{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: rgb(43, 236, 43);
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .whatsapp i{
+        color: white;
+        font-size: 50px;
+    }
     
 }
