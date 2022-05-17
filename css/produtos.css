@@ -1,0 +1,392 @@
+@font-face {
+    src: url(../fontes/Roboto-Black.ttf);
+    font-family: 'Roboto-Black';
+}
+
+@font-face {
+    src: url(../fontes/Roboto-BlackItalic.ttf);
+    font-family: 'Roboto-BlackItalic';
+}
+
+@font-face {
+    src: url(../fontes/Roboto-Regular.ttf);
+    font-family: 'Roboto-Regular';
+}
+
+@font-face {
+    src: url(../fontes/Roboto-Italic.ttf);
+    font-family: 'Roboto-Italic';
+}
+
+@font-face {
+    src: url(../fontes/Roboto-Light.ttf);
+    font-family: 'Roboto-Light';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+/* ------------- Desktop ------------ */
+
+@media screen and (min-width:1025px) {
+
+    /* Barra-de-navegação */
+    .topnav {
+        font-family: 'Roboto-Regular';
+        background-color: #003d51;
+        padding-right: 3%;
+    }
+
+    .topnav :hover {
+        color: #017ca5;
+    }
+
+    .topnav a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 3% 2% 0 2%;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .topnav a.active {
+        background-color: transparent;
+        float: left;
+        padding: 1.8% 1.8% 1.2% 1.8%;
+        font-size: 10px;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+
+    /* Fundo */
+    .fundo {
+        background-image: url('../img/back3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 7%;
+    }
+
+    .fundo-mobile img {
+        display: none;
+    }
+
+    /* Botões */
+
+    .botão {
+        padding-top: 30px;
+    }
+
+    .saiba-mais {
+        height: 40px;
+        width: 150px;
+        color: white;
+        background-color: #003d51;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: 'Roboto-Regular';
+    }
+
+    #inverso .saiba-mais {
+        height: 40px;
+        width: 150px;
+        color: #003d51;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: 'Roboto-Regular';
+    }
+
+    .saiba-mais i {
+        color: white;
+    }
+
+    .saiba-mais span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .saiba-mais span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .saiba-mais:hover span {
+        padding-right: 25px;
+    }
+
+    .saiba-mais:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+
+    /* Produtos */
+    .produtos-titulo {
+        text-align: center;
+        color: #003d51;
+        font-size: 1.5rem;
+        font-family: 'Roboto-Black';
+        padding-bottom: 0px;
+    }
+
+    .produtos {
+        width: 90%;
+        margin: 5% 8% 5% 8%;
+    }
+
+    .produtos h1 {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .produtos-card {
+        width: 290px;
+        height: 440px;
+        border-radius: 15px;
+        background-color: rgb(233, 231, 231);
+        display: inline-block;
+        border-top: 5px solid white;
+        border-radius: 22px;
+    }
+
+    .produtos-card img {
+        width: 100%;
+        height: 35%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .produtos-card h1 {
+        font-size: 1.3rem;
+        color: Black;
+        font-family: 'Roboto-Regular';
+        padding: 15px 0 0 20px;
+        text-align: left;
+    }
+
+    .produtos-card p {
+        font-size: 1rem;
+        font-family: 'Roboto-Light';
+        padding: 15px 40px 0 20px;
+    }
+
+    .produtos-card .botão {
+        padding: 20px 0 0 20px;
+    }
+
+    .Veja-mais {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+    /* Produtos individuais */
+    .corpo {
+        display: flex;
+        margin: 50px;
+        background-color: white;
+    }
+
+    .parte1 {
+        width: 100%;
+        height: 200%;
+        position: relative;
+        display: block;
+    }
+
+    .h1-mobile {
+        display: none;
+    }
+
+    .imagens{
+        display: inline-block;
+        margin: 60px 0 100px 60px;
+        width: 45%;
+    }
+
+    .imagens li img {
+        width: 80px;
+        padding:0 5px 0 0;
+    }
+
+    ul {
+        list-style-type: none;
+        float: left;
+    }
+
+    .imagens img {
+        width: 75%;
+    }
+
+    #trocarimg {
+        margin-left: 50px;
+    }
+
+    .textos {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 60px 0 100px 20px;
+    }
+
+    .textos h1{
+        font-size: 1.8rem;
+        font-family: 'Roboto-Black';
+        color:#003d51 ;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    .text1 h2 {
+        font-size: 1.2rem;
+        font-family: 'Roboto-Black';
+    }
+
+    .text1 p {
+        font-size: 1rem;
+        font-family: 'Roboto-Regular';
+        padding-bottom: 2.5%;
+    }
+
+    .botoes-nos-produtos {
+        padding: 20px 20px 0 0;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2rem;
+        font-family: 'Roboto-Black';
+        color:#003d51 ;
+        text-align: center;
+    }
+
+    /* .produtos-relacionados */
+    .produtos-relacionados{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 60px 50px 80px 50px ;
+        justify-content: space-around;
+    }
+
+    .cards-produtos {
+        border-radius: 20px;
+        width: 250px;
+        height: 490px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 5px 8px 15px 1px rgb(146, 146, 146);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-produtos img{
+        border-radius: 10px 10px 0 0;
+        height: 150px;
+        width: 220px;
+        margin: 15px ;
+    }
+
+    .cards-produtos h1{
+        margin: 10px 0 0 20px;
+        font-size: 1.2rem;
+        font-family: 'Roboto-Regular';
+        text-align: left;
+        color: black;
+        font-weight: 900;
+    }
+
+    .cards-produtos h2{
+        margin: 8px 20px;
+        text-align: left;
+        font-family: 'Roboto-Regular';
+        font-size: 1rem;
+        font-weight: 800;
+        color: rgb(23, 206, 23);
+    }
+
+    .cards-produtos p{
+        font-family: "Roboto-Light";
+        font-size: 0.9rem;
+        margin: 15px 20px;
+        text-align: left;
+    }
+
+    .cards-produtos button{
+        width: 200px;
+        margin: 20px 20px 0 20px;
+    }
+
+}
+
+/* Rodape */
+.rodape {
+    background-color: lightgray;
+    text-align: center;
+    border-bottom: 10px solid #003d51;
+    padding: 100px 0  50px 0;
+}
+.rodape h1 {
+    font-family: 'Roboto-Light';
+    font-weight: lighter;
+    font-size: 2rem;
+    color: black;
+}
+.rodape h2 {
+    font-family: 'Roboto-Light';
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding: 2.5% 0;
+    color: black;
+}
+.rodape p {
+    font-family: 'Roboto-Light';
+    font-size: 1.2rem;
+}
+.rodape i {
+    padding: 4% 2% 4% 2%;
+    color: #003d51;
+    font-size: 2rem;
+}
+
+/* whatsapp */
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.whatsapp i {
+    margin-top: 16px;
+    color: white
+}
